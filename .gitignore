@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/trippy_api
 /.pnp
 .pnp.js
 
