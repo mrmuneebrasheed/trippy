@@ -1,11 +1,14 @@
 import React from "react";
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 
 export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-success">
-            <a href="#" className="navbar-brand">
-                Trippy
-            </a>
+            <Link to="/">
+                <a href="" className="navbar-brand">
+                    Trippy
+                </a>
+            </Link>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -20,10 +23,24 @@ export default function NavBar() {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <a className="nav-link">Home</a>
+                        <Link to="/">
+                            <a
+                                href="src\components\Home.jsx"
+                                className="nav-link"
+                            >
+                                Home
+                            </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Hotels</a>
+                        <Link to="/hotels">
+                            <a
+                                href="src\components\Hotels.jsx"
+                                className="nav-link"
+                            >
+                                Hotels
+                            </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link">Pricing</a>
