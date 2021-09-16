@@ -2,12 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 40px 20px;
-    border: 2px solid white;
-    border-radius: 15px;
-    box-shadow: 0 0 20px 10px grey;
+    & {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 20px;
+        border: 2px solid white;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px 10px grey;
+        transition: all 100ms linear;
+    }
+    &:hover {
+        transform: translate(10px, 10px) scale(1.05) rotate(-10deg);
+    }
 `;
 export default function CityCard(props) {
     return (

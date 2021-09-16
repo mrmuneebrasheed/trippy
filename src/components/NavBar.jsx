@@ -23,9 +23,9 @@ export default function NavBar() {
                         <a className="nav-link">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Features</a>
+                        <a className="nav-link">Hotels</a>
                     </li>
-                    <li classNameName="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link">Pricing</a>
                     </li>
                     <li className="nav-item">
